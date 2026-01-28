@@ -8,6 +8,8 @@ function App() {
     console.log(123)
     console.log('123')
     console.log('123')
+    console.log('567')
+    console.log('890')
   return (
     <>
       <div>
