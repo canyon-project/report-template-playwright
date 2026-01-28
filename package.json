@@ -1,0 +1,36 @@
+{
+  "name": "report-template-playwright",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "gen-coverage-report": "nyc report --reporter=@canyonjs/report-html --temp-dir=./.canyon_output",
+    "test": "playwright test && npm run gen-coverage-report"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@canyonjs/babel-plugin": "latest",
+    "@canyonjs/playwright": "latest",
+    "@canyonjs/report": "latest",
+    "@eslint/js": "^9.39.1",
+    "@playwright/test": "1.56.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "babel-plugin-istanbul": "latest",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "nyc": "^17.1.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vite": "8.0.0-beta.10"
+  }
+}
