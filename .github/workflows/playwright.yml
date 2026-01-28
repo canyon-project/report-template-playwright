@@ -21,6 +21,12 @@ jobs:
       run: npx @canyonjs/git-diff
     - name: Run Playwright tests
       run: pnpm run test
+    - name: Upload coverage to Canyon
+      uses: canyon-project/canyon-action@v1
+      with:
+        coverage-file: coverage/coverage-final.json
+        canyon-url: https://your-canyon-server.com
+        instrument-cwd: ${{ github.workspace }}
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
