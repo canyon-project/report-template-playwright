@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "gen-coverage-report": "nyc report --reporter=@canyonjs/report-html --temp-dir=./.canyon_output",
+    "gen-coverage-report": "nyc report --reporter=json --reporter=@canyonjs/report-html --temp-dir=./.canyon_output",
     "test": "playwright test && npm run gen-coverage-report"
   },
   "dependencies": {
