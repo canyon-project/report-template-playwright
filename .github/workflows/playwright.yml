@@ -22,7 +22,7 @@ jobs:
     - name: Run Playwright tests
       run: pnpm run test
     - name: Upload coverage to Canyon
-      uses: canyon-project/canyon-action@v1.0.3
+      uses: canyon-project/canyon-action@v1.0.6
       with:
         coverage-file: coverage/coverage-final.json
         canyon-url: https://your-canyon-server.com
